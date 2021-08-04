@@ -1,0 +1,70 @@
+form {
+    width:auto;
+}
+input {
+    padding: 5px;
+    transition: 0.7s;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 2%;
+}
+input:focus {
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 105%;
+    box-shadow: 5px 5px 5px black;
+    width:auto;
+}
+.formEmbed {
+    background-color: lightgrey;
+    padding: 15px;
+    width: 40%;
+    border-radius: 5px;
+    margin: auto;
+}
+select {
+    padding: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+select:focus {
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 105%;
+    box-shadow: 5px 5px 5px black;
+}
+label {
+    text-align: left;
+}
+option {
+    box-shadow: 5px 5px 200px black;
+}
+#email {
+    width: 42.5%;
+    transition: 1.1s;
+}
+#email:focus {
+    width:84%;
+}
+#tname:focus {
+    width: 43%;
+}
+#tname {
+    transition: 0.5s;
+}
+#gyear {
+    transition: 0.4s;
+}
+#gyear:focus {
+    width: auto;
+}
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header {
+    color: whitesmoke; 
+    text-align: center;
+}
