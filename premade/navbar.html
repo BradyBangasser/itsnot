@@ -1,7 +1,11 @@
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<script src="https://kit.fontawesome.com/eb6d54e76a.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script  src="navbar.js"></script>
+<script  src="../pages/universalScript.js"></script>
 <div class="container-fluid">
     <!-- Nav Header -->
+
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
             <span class="icon-bar"></span>
@@ -37,7 +41,12 @@
             <li><a href="#"><span class="fa fa-info-circle"></span><span class="link"> About</span></a></li>
             <!-- Contact -->
             <li><a href="#"><span class="fa fa-phone"></span><span class="link"> Contact</span></a></li>
+            <!--Fighter Jet-->
+            <li><a href="#"><span class="fas fa-fighter-jet"></span><span class="link"> Fighter Jet</span></a></li>
+            <!--Dark Mode-->
+            <li><a onclick="changeMode()" href="#"><span id="lightmodechange" class="fas fa-sun"></span> <span id="lightmodechangelink" class="link"> Light Mode</span></a></li>
         </ul>
+        
         <!-- Nav Right -->
         <span></span>
         <form class="navbar-form navbar-right">
@@ -46,5 +55,21 @@
             </div>
             <button type="submit" class="btn"><span class="fa fa-search"></span></button>
         </form>
+        <span></span>
     </div>
 </div>
+<script>
+	function changeMode() {
+		if ($("#lightmodechange").hasClass("fa-sun")) {
+			$("#lightmodechange").removeClass("fa-sun");
+			$("#lightmodechange").addClass("fa-moon");
+			$("#lightmodechangelink").text("Dark Mode");
+			$("body").css("background-color", "WhiteSmoke")
+		} else if ($("#lightmodechange").hasClass("fa-moon")) {
+			$("#lightmodechange").removeClass("fa-moon");
+			$("#lightmodechange").addClass("fa-sun");
+			$("#lightmodechangelink").text("Light Mode");
+			$("body").css("background-color", "#333333")
+		};
+	};
+</script>
