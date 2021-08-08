@@ -11,9 +11,15 @@
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script  src="./JS/index.js"></script>
+        <script>
+            $('document').ready(function() {
+                $('#navplace').load("./navbar.html");
+            });
+        </script>
     </head>
     <body>
+        <nav id="navplace"></nav>
         <h1 class="center">It's not Catchy</h1>
-        <a class="mostButtons" href="./pages/testing/testing.html">To Testing</a>
+        <a class="mostButtons" href="./testing.html">To Testing</a>
     </body>
 </html>
