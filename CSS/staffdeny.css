@@ -1,0 +1,17 @@
+#learnmore {
+    display: none;
+    position: fixed;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    top: auto;
+    margin: 10px;
+    text-align: center;
+    cursor: vertical-text;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
