@@ -10,12 +10,12 @@ $("li.dropdown").click(function(){
 });
 
 // Close dropdown on mouseleave
-$("li.dropdown").mouseleave(function(){
+$("li.dropdown").mouseleave(function() {
 	$(this).find(".dropdown-menu").slideUp("fast");
 	$(this).removeClass("open");
 });
 
 // Navbar toggle
-$(".navbar-toggle").click(function(){
+$(".navbar-toggle").click(function() {
 	$(".navbar-collapse").toggleClass("collapse").slideToggle("fast");
 });
