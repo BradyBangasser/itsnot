@@ -1,6 +1,8 @@
 #myProgress {
     width: 70%;
     background-color: grey;
+    padding: none;
+    margin: none;
   }
   
   #myBar {
