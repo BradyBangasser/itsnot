@@ -1,0 +1,12 @@
+#myProgress {
+    width: 49%;
+    background-color: grey;
+    border-radius: 25%;
+  }
+  
+  #myBar {
+    width: 20%;
+    height: 30px;
+    background-color: green;
+    border-radius: 25%;
+  }
