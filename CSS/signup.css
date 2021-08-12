@@ -68,7 +68,7 @@ header {
     color: whitesmoke; 
     text-align: center;
 }
-#submit:focus {
+#submit:active {
     background-color: #3db35c;
     border-radius: 11px;
     padding: 7px;
