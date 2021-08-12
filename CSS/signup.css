@@ -69,5 +69,11 @@ header {
     text-align: center;
 }
 #submit:focus {
+    background-color: #3db35c;
+    border-radius: 11px;
+    padding: 7px;
+    font-size: 110%;
+    color: white;
+    border: 1px solid #33914c;
     box-shadow: none;
 }
