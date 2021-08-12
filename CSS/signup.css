@@ -44,10 +44,10 @@ option {
     transition: 1.1s;
 }
 #email:focus {
-    width:84%;
+    width:auto;
 }
 #tname:focus {
-    width: 43%;
+    width: auto;
 }
 #tname {
     transition: 0.5s;
@@ -67,4 +67,7 @@ option {
 header {
     color: whitesmoke; 
     text-align: center;
+}
+#submit:focus {
+    box-shadow: none;
 }
