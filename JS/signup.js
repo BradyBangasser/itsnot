@@ -1,4 +1,4 @@
 $(`#submit`).click(function () {
-    $('document').alert("poop");
+    alert("poop");
     return false
 })
