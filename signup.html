@@ -13,12 +13,13 @@
                 $('#thefoot').load("./footer.html");
             });
         </script>
+        <script>function returnfalse() {alert('yo');return true;}</script>
     </head>
     <body>
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
         <div class="formEmbed">
             <p style="color:red; text-align: center;">* Required</p><p style="color:blue; text-align: center;">! Highly recommended(makes signing up faster)</p>
-            <form method="post" action="poop.php">
+            <form method="post" action="poop.php" onsubmit="return returnfalse()">
                 <div>
                     
                 </div>
@@ -51,6 +52,7 @@
                 <input id="submit" type="submit" value="Submit" class="mostButtons">
             </form>
         </div>
+        <div id="listplaceholderdiv" ></div>
         <footer id="thefoot"></footer>
     </body>
 </html>
