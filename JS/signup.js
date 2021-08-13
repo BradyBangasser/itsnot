@@ -1,5 +1,5 @@
 $('document').ready(function () {
-    $('listplaceholderdiv').load("./accessportal.html ol");
+    $('listplaceholderdiv').load("./accessportal.html #listofnotthere");
 });
 function denySub() {
     window.location.href = "http://www.w3schools.com";
