@@ -1,8 +1,8 @@
 $('document').ready(function () {
-    $('#listplaceholderdiv').load("./accessportal.html ol");
+    $('#listplaceholderdiv').load("./accessportal.html");
 });
 function denySub() {
-    window.location.href = "http://www.w3schools.com";
+    window.location.href = "../staff-deny";
     return false;
 };
 function allow() {
