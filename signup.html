@@ -13,7 +13,14 @@
                 $('#thefoot').load("./footer.html");
             });
         </script>
-        <script>function returnfalse() {alert('yo');return true;}</script>
+        <script>
+        const { checkStuff } = require('./JS/AAA.js')
+        async function onSub(that) {
+            const userObject = await checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
+            console.log(userObject)
+            return false
+        }
+        </script>
     </head>
     <body>
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
