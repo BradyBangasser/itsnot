@@ -19,7 +19,7 @@
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
         <div class="formEmbed">
             <p style="color:red; text-align: center;">* Required</p><p style="color:blue; text-align: center;">! Highly recommended(makes signing up faster)</p>
-            <form method="post" action="poop.php" onsubmit="return denySub()">
+            <form method="post" action="poop.php" onsubmit="return onSub()">
                 <div>
                     
                 </div>
@@ -43,6 +43,8 @@
                     <option value="vhe">Valentine Hills</option>
                     <option value="otr">Other</option>
                 </select><br><br>
+                <label for="sid" name="sid">* Student ID:</label>
+                <input type="number" id="sid" name="sid" placeholder="696969" required><br><br>
                 <label for="tname" name="tname">! Homeroom/First Hour Teacher Name:   </label>
                 <input type="text" id="tname" name="tname" placeholder="Nuss"><br><br>
                 <label for="gyear" name="gyear">! Graduation Year:   </label>
