@@ -12,42 +12,43 @@ const userObject = {
     studentId: null,
     status: null
 };
-module.exports.checkStuff = async (fn, ln, em, sh, hr, gy, pw, si) => {
-    fixAll();
-    if (whitelist.includes(em)) {
-        userObject['status'] = `allow`;
-        return userObject;
-    } else {
-        const eparts = await parseEmail(em);
-        if (eparts['allowed'] === "allowed") {
-            const prose = await processemail(em, eparts.local, eparts.domain, fn, ln, gy, si).catch(err => {throw new Error(err)});
-            if (prose === 'allowed') {
-                userObject['status'] = 'allow';
-                return userObject;
+module.exports = {
+    checkStuff: async function (fn, ln, em, sh, hr, gy, pw, si) {
+        fixAll();
+        if (whitelist.includes(em)) {
+            userObject['status'] = `allow`;
+            return userObject;
+        } else {
+            const eparts = await parseEmail(em);
+            if (eparts['allowed'] === "allowed") {
+                const prose = await processemail(em, eparts.local, eparts.domain, fn, ln, gy, si).catch(err => {throw new Error(err)});
+                if (prose === 'allowed') {
+                    userObject['status'] = 'allow';
+                    return userObject;
+                } else {
+                    return deny();
+                }
+            } else if (eparts['allowed'] === "review") {
+                return review();
             } else {
                 return deny();
-            }
-        } else if (eparts['allowed'] === "review") {
-            return review();
-        } else {
-            return deny();
+            };
         };
-    };
-    function fixAll() {
-        fn = capitize(fn);
-        ln = capitize(ln);
-        userObject['user'] = `${fn} ${ln}`;
-        em = em.toLowerCase();
-        userObject['email'] = em;
-        hr = capitize(hr);
-        userObject['teacher'] = hr;
-        userObject['school'] = sh;
-        userObject['gradYear'] = gy;
-        userObject['password'] = pw;
-        userObject['studentId'] = si;
-    };
-};
-
+        function fixAll() {
+            fn = capitize(fn);
+            ln = capitize(ln);
+            userObject['user'] = `${fn} ${ln}`;
+            em = em.toLowerCase();
+            userObject['email'] = em;
+            hr = capitize(hr);
+            userObject['teacher'] = hr;
+            userObject['school'] = sh;
+            userObject['gradYear'] = gy;
+            userObject['password'] = pw;
+            userObject['studentId'] = si;
+        };
+    },
+}
 function parseEmail(em) {
     const firstArray = em.split(".");
     const emailArray = firstArray[0].split("@");

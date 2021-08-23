@@ -1,4 +1,4 @@
-const { checkStuff } = require('./AAA')
+const AAA = require('./AAA')
 $('document').ready(function () {
     $('#listplaceholderdiv').load("./accessportal.html");
 });
@@ -15,7 +15,7 @@ function allow() {
 };
 async function onSub(that) {
     console.log('here')
-    const userObject = await checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
+    const userObject = await AAA.checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
     console.log(userObject)
     return false
 }
