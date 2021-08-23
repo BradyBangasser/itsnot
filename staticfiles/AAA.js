@@ -1,7 +1,7 @@
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
 const blacklist = [];
-const { moundsviewschools } = require('./schoolemailprocessing')
+const { moundsviewschools } = require('../JS/schoolemailprocessing')
 const userObject = {
     user: null,
     email: null,
