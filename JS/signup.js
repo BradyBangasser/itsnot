@@ -14,6 +14,7 @@ function allow() {
     return true;
 };
 async function onSub(that) {
+    console.log('here')
     const userObject = await checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
     console.log(userObject)
     return false

@@ -7,26 +7,20 @@
         <link rel="stylesheet" href="/CSS/universalStyles.css">
         <link rel="stylesheet" href="/CSS/signup.css">
         <link rel="icon" href="/images/itsnotcatchylogo_auto_x2.png">
-        <script src="JS/signup.js"></script>
+        <script type="text/javascript" src="JS/signup.js"></script>
         <script>
             $('document').ready(function() {
                 $('#thefoot').load("./footer.html");
             });
         </script>
         <script>
-        const { checkStuff } = require('./JS/AAA.js')
-        async function onSub(that) {
-            const userObject = await checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
-            console.log(userObject)
-            return false
-        }
         </script>
     </head>
     <body>
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
         <div class="formEmbed">
             <p style="color:red; text-align: center;">* Required</p><p style="color:blue; text-align: center;">! Highly recommended(makes signing up faster)</p>
-            <form method="post" action="" onsubmit="return onSub(this)">
+            <form method="post" action="" id="jqueryidform" onsubmit="return onSub(this)">
                 <div>
                     
                 </div>
