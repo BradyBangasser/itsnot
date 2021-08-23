@@ -125,12 +125,10 @@ async function processemail(em, local, domain, fn, ln, gy, si) {
     var emailPros
     switch(domain.toLowerCase()) {
         case 'moundsviewschools':
-            const mv = await moundsviewschools(local, fn, ln, gy, si).catch(err => {emailPros = err; break;});
+            const mv = await moundsviewschools(local, fn, ln, gy, si).catch(err => {emailPros = err;});
             if (mv === 'allow') {
                 emailPros = 'allowed';
-            } else {
-                throw new Error('MVS Email Pros Error')
-            };
+            }
             break;
         default:
             review();
