@@ -18,7 +18,7 @@
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
         <div class="formEmbed">
             <p style="color:red; text-align: center;">* Required</p><p style="color:blue; text-align: center;">! Highly recommended(makes signing up faster)</p>
-            <form id="jqueryidform" onsubmit="return onSub()">
+            <form id="jqueryidform">
                 <div>
                     
                 </div>
@@ -50,7 +50,7 @@
                 <input type="number" id="gyear" name="gyear" min="2022" max="2035" placeholder="89"><br><br>
                 <label for="pass" name="pass">* Password:  </label>
                 <input type="password" id="pass" placeholder="LordFarquaadisdabest1!" required><br><br>
-                <input id="submit" type="submit" value="Submit" class="mostButtons">
+                <input id="submit" type="submit" value="Submit" class="mostButtons" onclick="return onSub()">
             </form>
         </div>
         <p id="result"> result here</p>

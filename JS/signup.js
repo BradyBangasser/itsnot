@@ -17,7 +17,6 @@ async function onSub() {
     console.log(name)
     const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
     $('#result').text(review)
-    await wait(20);
     return false;
 }
 const whitelist = ["bradybbangasser@gmail.com"];
