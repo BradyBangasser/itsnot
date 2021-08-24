@@ -13,6 +13,11 @@
             $('document').ready(function() {
                 $('#thefoot').load("./footer.html");
             });
+            $('#jqueryidform').on('submit', function () {
+                const rectangle = $('#fname').value;
+                console.log(rectangle);
+                return false
+            })
         </script>
     </head>
     <body>

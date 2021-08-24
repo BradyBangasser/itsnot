@@ -1,8 +1,4 @@
-$('#jqueryidform').on('submit', function () {
-    const rectangle = $('#fname').value;
-    console.log(rectangle);
-    return false
-})
+
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
 const blacklist = [];
