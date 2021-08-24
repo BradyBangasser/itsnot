@@ -16,6 +16,8 @@ async function onSub() {
     let name = document.forms["jqueryidform"]["fname"].value;
     const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
     $('#result').text(review)
+    await wait(20);
+    return false;
 }
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
@@ -234,4 +236,7 @@ function mvse(local, fn, ln, gy, si) {
     } else {
         throw new Error('MOUNDS VIEW EMAIL PROCESSING YEAR ERROR');
     }
+}
+async function wait(seconds) {
+    setTimeout(nothing, seconds*1000)
 }
