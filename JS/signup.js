@@ -15,6 +15,7 @@ function allow() {
 async function onSub() {
     let name = document.forms["jqueryidform"]["fname"].value;
     console.log(name);
+    return false
 }
 
 const whitelist = ["bradybbangasser@gmail.com"];
@@ -30,12 +31,6 @@ const userObject = {
     studentId: null,
     status: null
 };
-async function onSub(that) {
-    console.log('here')
-    const userObject = await checkStuff(that.fname.value, that.lname.value, that.email.value, that.skool.value, that.tname.value, that.gyear.value, that.pass.value, that.sid.value);
-    console.log(userObject)
-    return false
-}
 async function checkStuff(fn, ln, em, sh, hr, gy, pw, si) {
     fixAll();
     if (whitelist.includes(em)) {
