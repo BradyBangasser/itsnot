@@ -14,8 +14,9 @@ function allow() {
 };
 async function onSub() {
     let name = document.forms["jqueryidform"]["fname"].value;
-    console.log(name);
-    return false
+    const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
+    console.log(review);
+    console.log('poop')
 }
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
