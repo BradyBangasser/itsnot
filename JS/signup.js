@@ -22,7 +22,7 @@ async function onSub() {
     let pw = document.forms["jqueryidform"]["pass"].value;
     let si = document.forms["jqueryidform"]["sid"].value;
     console.log(fname, lname, em, sh, hr, gy, pw, si)
-    const review = await checkStuff(fname, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
+    const review = await checkStuff(fname, lname, em, sh, hr, gy, pw, si);
     $('#result').text(review)
     return false;
 }
