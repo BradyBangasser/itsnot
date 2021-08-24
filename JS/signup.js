@@ -24,7 +24,7 @@ async function onSub() {
     console.log(fname, lname, em, sh, hr, gy, pw, si)
     const review = await checkStuff(fname, lname, em, sh, hr, gy, pw, si);
     $('#result').text(review)
-    return false;
+    return true;
 }
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
