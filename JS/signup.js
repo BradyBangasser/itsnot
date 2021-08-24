@@ -12,7 +12,11 @@ function flag() {
 function allow() {
     return true;
 };
-
+async function onSub() {
+    let name = document.forms["jqueryidform"]["fname"].value;
+    console.log(name);
+    return false
+}
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
 const blacklist = [];
