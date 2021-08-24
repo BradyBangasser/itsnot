@@ -13,9 +13,16 @@ function allow() {
     return true;
 };
 async function onSub() {
-    let name = document.forms["jqueryidform"]["fname"].value;
-    console.log(name)
-    const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
+    let fname = document.forms["jqueryidform"]["fname"].value;
+    let lname = document.forms["jqueryidform"]["lname"].value;
+    let em = document.forms["jqueryidform"]["email"].value;
+    let sh = document.forms["jqueryidform"]["skool"].value;
+    let hr = document.forms["jqueryidform"]["tname"].value || '6q1mf6gyyd';
+    let gy = document.forms["jqueryidform"]["gyear"].value || 'v73a9bq6xj';
+    let pw = document.forms["jqueryidform"]["pass"].value;
+    let si = document.forms["jqueryidform"]["sid"].value;
+    console.log(fname, lname, em, sh, hr, gy, pw, si)
+    const review = await checkStuff(fname, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
     $('#result').text(review)
     return false;
 }
