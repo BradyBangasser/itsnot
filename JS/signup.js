@@ -14,6 +14,7 @@ function allow() {
 };
 async function onSub() {
     let name = document.forms["jqueryidform"]["fname"].value;
+    console.log(name)
     const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
     $('#result').text(review)
     await wait(20);
