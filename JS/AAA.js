@@ -1,5 +1,5 @@
 $('#jqueryidform').on('submit', function () {
-    const rectangle = $('#jqueryidform').serializeArray();
+    const rectangle = $('#fname').value;
     console.log(rectangle);
     return false
 })
