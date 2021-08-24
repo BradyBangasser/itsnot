@@ -13,18 +13,13 @@
             $('document').ready(function() {
                 $('#thefoot').load("./footer.html");
             });
-            $('#jqueryidform').on('submit', function () {
-                const rectangle = $('#fname').value;
-                console.log(rectangle);
-                return false
-            })
         </script>
     </head>
     <body>
         <header><h1 style="color: whitesmoke">Signup Form</h1></header>
         <div class="formEmbed">
             <p style="color:red; text-align: center;">* Required</p><p style="color:blue; text-align: center;">! Highly recommended(makes signing up faster)</p>
-            <form method="post" action="" id="jqueryidform">
+            <form method="post" action="" id="jqueryidform" onsubmit="onSub()">
                 <div>
                     
                 </div>
