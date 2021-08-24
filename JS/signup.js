@@ -15,8 +15,7 @@ function allow() {
 async function onSub() {
     let name = document.forms["jqueryidform"]["fname"].value;
     const review = await checkStuff(name, document.forms["jqueryidform"]["lname"].value, document.forms["jqueryidform"]["email"].value, document.forms["jqueryidform"]["skkol"].value, document.forms["jqueryidform"]["tname"].value, document.forms["jqueryidform"]["gyear"].value, document.forms["jqueryidform"]["pass"].value, document.forms["jqueryidform"]["sid"].value);
-    console.log(review);
-    console.log('poop')
+    $('#result').text(review)
 }
 const whitelist = ["bradybbangasser@gmail.com"];
 const okemails = ["moundsviewschools"];
