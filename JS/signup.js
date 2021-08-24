@@ -31,6 +31,7 @@ const userObject = {
     status: null
 };
 async function checkStuff(fn, ln, em, sh, hr, gy, pw, si) {
+    return 'Frank'
     fixAll();
     if (whitelist.includes(em)) {
         userObject['status'] = `allow`;
