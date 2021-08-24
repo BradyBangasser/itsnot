@@ -34,21 +34,26 @@ async function checkStuff(fn, ln, em, sh, hr, gy, pw, si) {
     fixAll();
     if (whitelist.includes(em)) {
         userObject['status'] = `allow`;
-        return userObject;
+        // return userObject;
+        return 'passwl'
     } else {
         const eparts = await parseEmail(em);
         if (eparts['allowed'] === "allowed") {
             const prose = await processemail(em, eparts.local, eparts.domain, fn, ln, gy, si).catch(err => {throw new Error(err)});
             if (prose === 'allowed') {
                 userObject['status'] = 'allow';
-                return userObject;
+                // return userObject;
+                return 'pass'
             } else {
-                return deny();
+                // return deny();
+                return "failed";
             }
         } else if (eparts['allowed'] === "review") {
-            return review();
+            // return review();
+            return 'review'
         } else {
-            return deny();
+            // return deny();
+            return "failed";
         };
     };
     function fixAll() {
