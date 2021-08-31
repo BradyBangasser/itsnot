@@ -1,6 +1,8 @@
 <html>
-<?php header("Access-Control-Allow-Origin: https://itsnotcatchy.com"); ?>
-<?php header("Allow: POST"); ?>
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+?>
 <body>
 
 Welcome <?php echo $_POST["fname"]; ?><br>

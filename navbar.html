@@ -68,11 +68,13 @@
 			$("#lightmodechange").addClass("fa-moon");
 			$("#lightmodechangelink").text("Dark Mode");
 			$("body").css("background-color", "WhiteSmoke")
+            $("body").css("color", "#333333")
 		} else if ($("#lightmodechange").hasClass("fa-moon")) {
 			$("#lightmodechange").removeClass("fa-moon");
 			$("#lightmodechange").addClass("fa-sun");
 			$("#lightmodechangelink").text("Light Mode");
 			$("body").css("background-color", "#333333")
+            $("body").css("color", "WhiteSmoke")
 		};
 	};
 </script>
