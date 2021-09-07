@@ -1,3 +1,6 @@
+body, html {
+  height: 100%
+}
 .bgimg {
   /* Background image */
   background-image: url('../images/plauge.jpg');
