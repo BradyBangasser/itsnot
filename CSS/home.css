@@ -13,7 +13,7 @@ body, html {
   /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
   position: relative;
   /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
+  color: rgb(53, 50, 50);
   /* Add a font */
   font-family: "Courier New", Courier, monospace;
   /* Set the font-size to 25 pixels */
@@ -49,4 +49,10 @@ body, html {
 hr {
   margin: auto;
   width: 40%;
+}
+.topmiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
 }
