@@ -36,7 +36,7 @@ footer {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  min-height: 50px;
+  min-height: 100px;
 }
 .cbut {
   display: flex;
