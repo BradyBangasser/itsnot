@@ -332,6 +332,7 @@ body {
   transition: 0.5s ease;
 }
 nav {
+  min-height: 100px;
   margin-bottom: 20%;
   color: whitesmoke;
 }

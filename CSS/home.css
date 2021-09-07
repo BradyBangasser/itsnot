@@ -53,8 +53,7 @@ hr {
 }
 .topmiddle {
   position: absolute;
+  width: 100%;
   top: 0%;
-  left: 49%;
-  right: 49%;
   text-align: center;
 }
