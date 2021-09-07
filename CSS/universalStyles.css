@@ -117,14 +117,14 @@ footer {
 .inheader {
     padding: 10px;
 }
-a:not(.mostButtons) {
+a:not(.mostButtons, .fa) {
     cursor: alias;
     color: rgb(37, 155, 190);
 }
-a:not(.mostButtons):visited {
+a:not(.mostButtons, .fa):visited {
     color:rgb(160, 58, 228);
 }
-a:not(.mostButtons):hover {
+a:not(.mostButtons, .fa):hover {
     color: rgb(57, 195, 236);
 }
 #foottext {
@@ -167,18 +167,18 @@ body {
   width: 100%;
   padding: 1px;
 }
-.navbar .nav li > a:not(.mostButtons), .navbar .navbar-brand {
+.navbar .nav li > a:not(.mostButtons, .fa), .navbar .navbar-brand {
   max-height: 50px;
   width: auto;
   background: transparent !important;
   font-size: 18px;
   transition: 0.2s ease-in-out;
 }
-.navbar .nav li > a:not(.mostButtons):hover, .navbar .navbar-brand:hover {
+.navbar .nav li > a:not(.mostButtons, .fa):hover, .navbar .navbar-brand:hover {
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
 }
-.navbar .nav li > a:not(.mostButtons):hover .link, .navbar .navbar-brand:hover .link {
+.navbar .nav li > a:not(.mostButtons, .fa):hover .link, .navbar .navbar-brand:hover .link {
   width: 100%;
   padding: 0 5px 0 5px;
   visibility: visible;
@@ -270,17 +270,17 @@ body {
   text-align: center;
   border-radius: 0;
 }
-.navbar .dropdown .dropdown-menu li, .navbar .dropdown .dropdown-menu a:not(.mostButtons) {
+.navbar .dropdown .dropdown-menu li, .navbar .dropdown .dropdown-menu a:not(.mostButtons, .fa) {
   color: white;
   font-size: 14px;
   line-height: 30px;
 }
-.navbar .dropdown .dropdown-menu li:hover, .navbar .dropdown .dropdown-menu a:not(.mostButtons):hover {
+.navbar .dropdown .dropdown-menu li:hover, .navbar .dropdown .dropdown-menu a:not(.mostButtons, .fa):hover {
   color: white;
   letter-spacing: 1px;
   background: transparent;
 }
-.navbar .dropdown .dropdown-menu a:not(.mostButtons) {
+.navbar .dropdown .dropdown-menu a:not(.mostButtons, .fa) {
   /* padding: 0 15px 0 15px; */
   padding: 0;
 
@@ -337,4 +337,28 @@ nav {
 .leftfooter {
   position: absolute;
   left: 0%;
+}
+.mediaicons {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.mediaicons:hover {
+  text-decoration: none;
+}
+.fa-twitter {
+  background: white;
+  color: #55ACEE;
+}
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+}
+.fa-twitter:visited {
+  background: white;
+  color: #55ACEE;
 }
