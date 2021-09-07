@@ -117,14 +117,14 @@ footer {
 .inheader {
     padding: 10px;
 }
-a {
+a:not(.mostButtons) {
     cursor: alias;
     color: rgb(37, 155, 190);
 }
-a:visited {
+a:not(.mostButtons):visited {
     color:rgb(160, 58, 228);
 }
-a:hover {
+a:not(.mostButtons):hover {
     color: rgb(57, 195, 236);
 }
 #foottext {
