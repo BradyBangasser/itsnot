@@ -339,7 +339,7 @@ nav {
   left: 0%;
   top: 0%;
 }
-.mediaicons {
+.mediaicon {
   padding: 10px;
   font-size: 20px;
   width: 40px;
@@ -348,7 +348,7 @@ nav {
   border-radius: 50%;
   transition: 0.5s;
 }
-.mediaicons:hover {
+.mediaicon:hover {
   text-decoration: none;
 }
 .fa-twitter {
@@ -362,4 +362,20 @@ nav {
 .fa-twitter:visited {
   background: white;
   color: #55ACEE;
+}
+.fa-reddit {
+  background: white;
+  color: #ff5700;
+}
+.fa-reddit:hover {
+  background: #ff5700;
+  color: white;
+}
+.mediaicons {
+  text-decoration: none;
+}
+.mediadivider {
+  width:5px;
+  height:auto;
+  display:inline-block;
 }
