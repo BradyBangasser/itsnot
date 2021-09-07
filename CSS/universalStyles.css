@@ -337,6 +337,7 @@ nav {
 .leftfooter {
   position: absolute;
   left: 0%;
+  top: 0%;
 }
 .mediaicons {
   padding: 10px;
