@@ -334,3 +334,7 @@ nav {
   margin-bottom: 20%;
   color: whitesmoke;
 }
+.leftfooter {
+  position: absolute;
+  left: 0%;
+}
