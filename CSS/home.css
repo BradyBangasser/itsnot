@@ -1,11 +1,11 @@
 body, html {
-  height: 100%
+  height: 80%
 }
 .bgimg {
   /* Background image */
   background-image: url('../images/plauge.jpg');
   /* Full-screen */
-  height: 500%;
+  height: 80%;
   /* Center the background image */
   background-position: center;
   /* Scale and zoom in the image */
@@ -18,6 +18,8 @@ body, html {
   font-family: "Courier New", Courier, monospace;
   /* Set the font-size to 25 pixels */
   font-size: 25px;
+  width: 99%;
+  margin: auto;
 }
 
 /* Position text in the top-left corner */
