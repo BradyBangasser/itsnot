@@ -36,6 +36,7 @@ footer {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-height: 50px;
 }
 .cbut {
   display: flex;
@@ -346,7 +347,7 @@ nav {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .mediaicon:hover {
   text-decoration: none;
