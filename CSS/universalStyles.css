@@ -378,12 +378,12 @@ nav {
   background: #ff5700;
   color: white;
 }
-.fa-discord {
+.fab-discord {
   background: white;
   color: #7289d9;
 }
-.fa-discord:hover {
-  background: #23272A;
+.fab-discord:hover {
+  background: #353636;
   color: white;
 }
 .mediaicons {
