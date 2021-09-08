@@ -334,6 +334,7 @@ nav {
   min-height: 100px;
   margin-bottom: 20%;
   color: whitesmoke;
+  min-height: fit-content;
 }
 .leftfooter {
   position: relative;
