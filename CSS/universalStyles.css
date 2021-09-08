@@ -354,6 +354,7 @@ nav {
   text-decoration: none;
   border-radius: 50%;
   transition: 0.8s;
+  text-decoration: none;
 }
 .mediaicon:hover {
   text-decoration: none;
