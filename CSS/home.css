@@ -6,7 +6,7 @@ body, html {
   background-image: url('../images/plauge.jpg');
   /* Full-screen */
   height: auto;
-  min-height: 400px;
+  min-height: 600px;
   /* Center the background image */
   background-position: center;
   /* Scale and zoom in the image */
