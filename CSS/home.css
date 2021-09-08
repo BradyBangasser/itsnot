@@ -1,5 +1,5 @@
 body, html {
-  height: 80%;
+  height: 100%;
 }
 .bgimg {
   /* Background image */
@@ -19,7 +19,7 @@ body, html {
   font-family: "Courier New", Courier, monospace;
   /* Set the font-size to 25 pixels */
   font-size: 25px;
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-shadow: 1.5px 1.5px black;
 }
