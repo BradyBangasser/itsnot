@@ -400,7 +400,7 @@ nav {
   background-color: white;
   color: black;
 }
-.fa-tiktok {
+.fa-tiktok:hover {
   background-color: black;
   color: white;
 }
