@@ -418,7 +418,7 @@ a.mediaicon {
   background: white !important;
   color: #bb0000 !important;
   text-align: center;
-  padding: none !important;
+  padding: 10px !important;
 }
 .fa-youtube:hover {
   background: #bb0000 !important;
