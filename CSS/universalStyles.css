@@ -41,6 +41,7 @@ footer {
   text-align: center;
   position: absolute;
   bottom: 0%;
+  width: 100%;
 }
 .cbut {
   display: flex;
@@ -387,7 +388,7 @@ a.mediaicon {
   color: #7289d9 !important;
 }
 .fa-discord:hover {
-  background: #353636 !important;
+  background: #7289d9 !important;
   color: white !important;
 }
 .mediaicons {
