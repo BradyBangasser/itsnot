@@ -347,7 +347,7 @@ nav {
   left: 0%;
   top: 0%;
 }
-.mediaicon {
+a.mediaicon {
   padding: 10px;
   font-size: 20px;
   width: 40px;
@@ -361,32 +361,32 @@ nav {
   text-decoration: none;
 }
 .fa-twitter {
-  background: white;
-  color: #55ACEE;
+  background: white !important;
+  color: #55ACEE !important;
 }
 .fa-twitter:hover {
-  background: #55ACEE;
-  color: white;
+  background: #55ACEE !important;
+  color: white !important;
 }
 .fa-twitter:visited {
-  background: white;
-  color: #55ACEE;
+  background: white !important;
+  color: #55ACEE !important;
 }
 .fa-reddit {
-  background: white;
-  color: #ff5700;
+  background: white !important;
+  color: #ff5700 !important;
 }
 .fa-reddit:hover {
-  background: #ff5700;
-  color: white;
+  background: #ff5700 !important;
+  color: white !important;
 }
 .fa-discord {
-  background: white;
-  color: #7289d9;
+  background: white !important;
+  color: #7289d9 !important;
 }
 .fa-discord:hover {
-  background: #353636;
-  color: white;
+  background: #353636 !important;
+  color: white !important;
 }
 .mediaicons {
   text-decoration: none;
@@ -399,18 +399,18 @@ nav {
   display:inline-block;
 }
 .fa-tiktok {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 .fa-tiktok:hover {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 .fa-linkedin-in {
-  background-color: white;
-  color: #007bb5;
+  background-color: white !important;
+  color: #007bb5 !important;
 }
 .fa-linkedin-in:hover {
-  background-color: #007bb5;
-  color: white;
+  background-color: #007bb5 !important;
+  color: white !important;
 }
