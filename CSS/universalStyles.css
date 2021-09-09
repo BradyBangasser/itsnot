@@ -340,6 +340,7 @@ nav {
   min-height: fit-content;
   padding-bottom: 5%;
   z-index: 2;
+  box-shadow: 2px 2px 5px black;
 }
 .leftfooter {
   position: relative;
@@ -403,5 +404,13 @@ nav {
 }
 .fa-tiktok:hover {
   background-color: black;
+  color: white;
+}
+.fa-linkedin-in {
+  background-color: white;
+  color: #007bb5;
+}
+.fa-linkedin-in:hover {
+  background-color: #007bb5;
   color: white;
 }
