@@ -28,7 +28,7 @@ body {
 }
 
 footer {
-  margin-top: auto;
+  margin-top: auto !important;
   padding: 5px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -412,5 +412,13 @@ a.mediaicon {
 }
 .fa-linkedin-in:hover {
   background-color: #007bb5 !important;
+  color: white !important;
+}
+.fa-youtube {
+  background: white !important;
+  color: #bb0000 !important;
+}
+.fa-youtube:hover {
+  background: #bb0000 !important;
   color: white !important;
 }
