@@ -418,8 +418,12 @@ a.mediaicon {
   background: white !important;
   color: #bb0000 !important;
   text-align: center;
+  padding: none !important;
 }
 .fa-youtube:hover {
   background: #bb0000 !important;
   color: white !important;
+}
+.gcse-search {
+  width: 50%;
 }
