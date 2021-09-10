@@ -343,9 +343,7 @@ nav {
   box-shadow: 2px 2px 5px black;
 }
 .leftfooter {
-  position: relative;
-  left: 0%;
-  top: 0%;
+  width: 100%;
 }
 a.mediaicon {
   padding: 10px;
