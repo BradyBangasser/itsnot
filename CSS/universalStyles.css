@@ -37,7 +37,7 @@ footer {
   -ms-user-select: none;
   user-select: none;
   min-height: 100px;
-  background:#33914c;
+  background:linear-gradient(to right, #216132, #33914c);
   text-align: center;
 }
 .cbut {
@@ -355,7 +355,8 @@ a.mediaicon {
   text-decoration: none;
   border-radius: 50%;
   transition: 0.8s;
-  text-decoration: none !important; 
+  text-decoration: none !important;
+  cursor: default !important;
 }
 .mediaicon:hover {
   text-decoration: none;
@@ -418,7 +419,7 @@ a.mediaicon {
   background: white !important;
   color: #bb0000 !important;
   text-align: center;
-  padding: 10px !important;
+  padding: 9px !important;
 }
 .fa-youtube:hover {
   background: #bb0000 !important;
