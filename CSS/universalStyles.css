@@ -429,6 +429,9 @@ a.mediaicon {
 .fa-tshirt {
   background: white !important;
   color: #33914c !important;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .fa-tshirt:hover {
   background: #33914c !important;
