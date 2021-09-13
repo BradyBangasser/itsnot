@@ -427,10 +427,10 @@ a.mediaicon {
   width: 50%;
 }
 .fa-tshirt {
-  background: white;
-  color: #33914c;
+  background: white !important;
+  color: #33914c !important;
 }
 .fa-tshirt:hover {
-  background: #33914c;
-  color: white;
+  background: #33914c !important;
+  color: white !important;
 }
