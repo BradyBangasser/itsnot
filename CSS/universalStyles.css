@@ -426,3 +426,11 @@ a.mediaicon {
 .gcse-search {
   width: 50%;
 }
+.fa-tshirt {
+  background: white;
+  color: #33914c;
+}
+.fa-tshirt:hover {
+  background: #33914c;
+  color: white;
+}
